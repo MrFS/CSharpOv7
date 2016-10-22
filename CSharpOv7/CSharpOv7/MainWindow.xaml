@@ -1,0 +1,27 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharpOv7"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="CSharpOv7.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="408.686" Icon="icon.ico">
+    <Grid>
+        <Label x:Name="lblNfo" Content="Skriv en setning i feltet under" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtInput" HorizontalAlignment="Left" Height="23" Margin="24,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="341" BorderThickness="0,0,0,1"/>
+        <Label x:Name="lblDirections" Content="Trykk så på en av knappene og resultatet vil vise seg i resultatboksen" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top"/>
+        <GroupBox x:Name="grpbxContainerResultat" Header="Resultat" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Height="55" Width="373"/>
+        <TextBox x:Name="txtResultat" HorizontalAlignment="Left" Height="23" Margin="24,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="341" BorderThickness="0,0,0,1"/>
+        <Button x:Name="btnSnuText" Content="Snu Tekst" HorizontalAlignment="Left" Margin="24,168,0,0" VerticalAlignment="Top" Width="75" Height="24" Click="btnSnuText_Click" Cursor="Happy.cur"/>
+        <Button x:Name="btnToLower" Content="Småe Bokstaver" HorizontalAlignment="Left" Margin="104,168,0,0" VerticalAlignment="Top" Width="101" Height="24" Click="btnToLower_Click" Cursor="Happy.cur"/>
+        <Button x:Name="btnLenght" Content="Antall Tegn" HorizontalAlignment="Left" Margin="210,168,0,0" VerticalAlignment="Top" Width="101" Height="24" Click="btnLenght_Click" Cursor="Happy.cur"/>
+        <Button x:Name="btnOmvendt" Content="Omvendt Rekkefølge" HorizontalAlignment="Left" Margin="24,226,0,0" VerticalAlignment="Top" Width="128" Height="24" Click="btnOmvendt_Click" Cursor="Happy.cur"/>
+        <Button x:Name="btnStorBokstav" Content="Stor Førstebokstav" HorizontalAlignment="Left" Margin="24,197,0,0" VerticalAlignment="Top" Width="128" Height="24" Click="btnStorBokstav_Click" Cursor="Happy.cur"/>
+        <Button x:Name="btnEndreBGC" Content="Endre bakgrunnsfarge" HorizontalAlignment="Left" Margin="24,255,0,0" VerticalAlignment="Top" Width="128" Height="24" Click="btnEndreBGC_Click" Cursor="Happy.cur"/>
+        <GroupBox x:Name="grpBxFont" Header="Font (Resultat)" HorizontalAlignment="Left" Margin="157,197,0,0" VerticalAlignment="Top" Height="53" Width="154"/>
+        <Button x:Name="btnKursiv" Content="Kursiv" HorizontalAlignment="Left" Margin="169,218,0,0" VerticalAlignment="Top" Width="51" Height="24" FontStyle="Italic" Click="btnKursiv_Click" Cursor="Happy.cur"/>
+        <Button x:Name="btnFet" Content="Fet" HorizontalAlignment="Left" Margin="245,218,0,0" VerticalAlignment="Top" Width="49" Height="24" FontWeight="Bold" Click="btnFet_Click" Cursor="Happy.cur"/>
+
+    </Grid>
+</Window>
